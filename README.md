@@ -1,70 +1,80 @@
-# Getting Started with Create React App
+# Dashboard-App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
 
-## Available Scripts
+The ** Dashboard** is a React-based web application that provides a customizable interface for managing various widgets related to cloud security posture management. Users can view different dashboards, add new widgets, and remove existing ones, allowing them to monitor and manage cloud accounts and risks efficiently.
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+- **Dynamic Dashboard Management**: Users can add and remove widgets from various categories on the dashboard.
+- **Search Functionality**: A search bar is provided in the header to quickly search for content.
+- **Responsive Design**: The application is designed to be responsive, ensuring a seamless experience across devices.
+- **Notification Icon**: A bell icon is provided in the header for notifications (expandable for further functionality).
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Project Structure
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+```plaintext
+├── src
+│   ├── components
+│   │   ├── App.js           # Main application component
+│   │   ├── Header.js        # Header component with breadcrumbs, search bar, and notification icon
+│   │   ├── Widget.js        # Individual widget component
+│   │   └── Header.css       # Styles for the header component
+│   ├── App.css              # General styles for the application
+│   ├── index.js             # Main entry point for the React application
+├── public
+│   ├── index.html           # HTML template
+│   └── ...
+├── README.md                # Project documentation
+└── package.json             # Project dependencies and scripts
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Installation
+Prerequisites
+Node.js (v12 or later)
+npm (v6 or later) or yarn (v1.22 or later)
 
-### `npm run build`
+Steps
+Clone the repository:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+bash
+git clone https://github.com/your-username/cspm-dashboard.git
+cd dashboard
+Install the dependencies:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+bash
+npm install
+or
+bash
+yarn install
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Start the development server:
+bash
+npm start
+or
+bash
+yarn start
 
-### `npm run eject`
+The application will be available at http://localhost:3000.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Usage
+Adding a Widget
+Navigate to the desired category.
+Enter the widget name and text in the provided input fields.
+Click the "+ Add Widget" button to add the widget to the dashboard.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Removing a Widget
+Click the "Remove" button on any widget to remove it from the dashboard.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Searching
+Enter your query in the search bar located in the header. The search functionality is currently a placeholder and can be expanded as needed.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Customization
+Widget Layout: Modify the widgets-container in App.css to change how widgets are displayed.
+Header: Customize the header by editing Header.js and Header.css to fit your needs.
+Icons: Additional icons can be added using the react-icons library.
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Technologies Used
+React.js: JavaScript library for building user interfaces.
+React Icons: Library for including popular icons in React projects.
+CSS: Styling the components and layout.
